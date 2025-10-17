@@ -26,44 +26,41 @@
 
 ```yaml
 # 区块监控插件配置文件
-# Chunk Monitor Plugin Configuration File
 # 所有时间间隔单位为 Ticks (1秒 = 20 Ticks)
-# All time intervals are in Ticks (1 second = 20 Ticks)
 
-# 语言设置 / Language Setting
+# 语言设置
 # 支持: zh_CN (简体中文), en_US (English)
-# Supported: zh_CN (Simplified Chinese), en_US (English)
 language: "zh_CN"
 
-# MSPT (毫秒每刻) 监控配置 / MSPT Monitoring Configuration
+# MSPT (毫秒每刻) 监控配置
 mspt:
   enabled: true
-  interval: 100  # 检测间隔，单位 Ticks / Detection interval in Ticks
-  notification-limit: 50.0  # 通知上限，单位毫秒 / Notification limit in milliseconds
+  interval: 100  # 检测间隔，单位 Ticks
+  notification-limit: 50.0  # 通知上限，单位毫秒
 
-# 实体数量监控配置 / Entity Count Monitoring Configuration
+# 实体数量监控配置
 entity:
   enabled: true
-  interval: 80  # 检测间隔，单位 Ticks / Detection interval in Ticks
-  notification-limit: 200  # 区块内实体数量上限 / Entity count limit per chunk
+  interval: 80  # 检测间隔，单位 Ticks
+  notification-limit: 200  # 区块内实体数量上限
 
-# 掉落物数量监控配置 / Item Drop Monitoring Configuration
+# 掉落物数量监控配置
 item:
   enabled: true
-  interval: 60  # 检测间隔，单位 Ticks / Detection interval in Ticks
-  notification-limit: 100  # 区块内掉落物数量上限 / Item drop count limit per chunk
+  interval: 60  # 检测间隔，单位 Ticks
+  notification-limit: 100  # 区块内掉落物数量上限
 
-# 冷却配置 / Cooldown Configuration
+# 冷却配置
 cooldown:
-  duration: 5  # 通知冷却时间，单位分钟 / Notification cooldown in minutes
+  duration: 5  # 通知冷却时间，单位分钟
 
-# 通知配置 / Notification Configuration
+# 通知配置
 notification:
-  broadcast: true  # 是否向全服通知 / Send notification to all players
-  console: true  # 是否向控制台通知 / Send notification to console
-  show-coordinates: true  # 是否显示坐标范围 / Show coordinate range
+  broadcast: true  # 是否向全服通知
+  console: true  # 是否向控制台通知
+  show-coordinates: true  # 是否显示坐标范围
 
-# 消息配置 / Message Configuration
+# 消息配置
 messages:
   zh_CN:
     # MSPT 通知消息
