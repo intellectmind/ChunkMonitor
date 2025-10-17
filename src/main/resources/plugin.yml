@@ -1,0 +1,13 @@
+name: chunkmonitor
+version: '1.0.0'
+main: cn.kurt6.chunkmonitor.ChunkMonitorPlugin
+api-version: '1.20'
+authors: [ Kurt ]
+website: https://www.kurt6.cn
+description: "区块性能监控插件，支持Folia和Paper"
+folia-supported: true
+
+permissions:
+  chunkmonitor.admin:
+    description: "管理员权限"
+    default: op
